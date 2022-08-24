@@ -1,0 +1,7 @@
+django>=4.0.3
+pyyaml>=6.0
+django-cors-headers
+mysqlclient
+channels
+channels_redis
+markdownify

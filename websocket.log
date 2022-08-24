@@ -1,0 +1,747 @@
+2022-08-08 20:36:41,779 INFO     Starting server at tcp:port=8001:interface=0.0.0.0
+2022-08-08 20:36:41,779 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-08-08 20:36:41,779 INFO     Configuring endpoint tcp:port=8001:interface=0.0.0.0
+2022-08-08 20:36:41,780 INFO     Listening on TCP address 0.0.0.0:8001
+2022-08-08 20:41:13,305 INFO     Killed 0 pending application instances
+111.8.251.22:60756 - - [08/Aug/2022:20:36:53] "WSCONNECTING /saveDocument/sefd/" - -
+111.8.251.22:60756 - - [08/Aug/2022:20:36:53] "WSCONNECT /saveDocument/sefd/" - -
+sdfsdf
+113.222.203.175:24627 - - [08/Aug/2022:20:36:56] "WSCONNECTING /saveDocument/asdf/" - -
+113.222.203.175:24627 - - [08/Aug/2022:20:36:56] "WSCONNECT /saveDocument/asdf/" - -
+111.8.251.22:60756 - - [08/Aug/2022:20:36:58] "WSDISCONNECT /saveDocument/sefd/" - -
+123
+113.222.203.175:24627 - - [08/Aug/2022:20:37:01] "WSDISCONNECT /saveDocument/asdf/" - -
+2022-08-08 20:41:13,934 INFO     Starting server at tcp:port=8001:interface=0.0.0.0
+2022-08-08 20:41:13,934 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-08-08 20:41:13,934 INFO     Configuring endpoint tcp:port=8001:interface=0.0.0.0
+2022-08-08 20:41:13,935 INFO     Listening on TCP address 0.0.0.0:8001
+2022-08-08 20:49:26,349 INFO     Killed 0 pending application instances
+111.8.251.22:61192 - - [08/Aug/2022:20:41:29] "WSCONNECTING /saveDocument/sefd/" - -
+111.8.251.22:61192 - - [08/Aug/2022:20:41:29] "WSCONNECT /saveDocument/sefd/" - -
+sdfsf
+111.8.251.22:61192 - - [08/Aug/2022:20:41:34] "WSDISCONNECT /saveDocument/sefd/" - -
+2022-08-08 20:49:26,972 INFO     Starting server at tcp:port=8001:interface=0.0.0.0
+2022-08-08 20:49:26,973 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-08-08 20:49:26,973 INFO     Configuring endpoint tcp:port=8001:interface=0.0.0.0
+2022-08-08 20:49:26,974 INFO     Listening on TCP address 0.0.0.0:8001
+Not Found: /saveDocument/sefd/
+2022-08-08 20:57:10,340 WARNING  Not Found: /saveDocument/sefd/
+2022-08-08 20:59:32,795 INFO     Killed 0 pending application instances
+81.70.16.241:0 - - [08/Aug/2022:20:57:10] "GET /saveDocument/sefd/" 404 9883
+2022-08-08 20:59:33,412 INFO     Starting server at tcp:port=8001:interface=0.0.0.0
+2022-08-08 20:59:33,412 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-08-08 20:59:33,413 INFO     Configuring endpoint tcp:port=8001:interface=0.0.0.0
+2022-08-08 20:59:33,413 INFO     Listening on TCP address 0.0.0.0:8001
+2022-08-08 21:01:58,340 INFO     Killed 0 pending application instances
+2022-08-08 21:01:58,970 INFO     Starting server at tcp:port=8001:interface=0.0.0.0
+2022-08-08 21:01:58,971 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-08-08 21:01:58,971 INFO     Configuring endpoint tcp:port=8001:interface=0.0.0.0
+2022-08-08 21:01:58,972 INFO     Listening on TCP address 0.0.0.0:8001
+2022-08-08 21:14:44,582 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+2022-08-08 21:14:58,594 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+2022-08-08 21:17:09,703 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+2022-08-08 21:18:20,758 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+2022-08-08 21:20:08,842 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+Not Found: /saveDocument/11_45/
+2022-08-08 21:26:17,285 WARNING  Not Found: /saveDocument/11_45/
+2022-08-08 21:36:41,622 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+2022-08-08 21:36:49,629 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+2022-08-08 21:37:43,681 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+2022-08-08 21:38:13,702 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+2022-08-08 21:42:35,915 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+2022-08-08 21:42:47,926 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+2022-08-08 21:43:02,939 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 12, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.
+Not Found: /saveDocument/11_12/
+2022-08-08 21:45:22,439 WARNING  Not Found: /saveDocument/11_12/
+2022-08-08 21:47:41,157 ERROR    Exception inside application: No route found for path 'saveDocument/11/12'.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'saveDocument/11/12'.
+2022-08-08 21:51:30,332 ERROR    Exception inside application: No route found for path 'saveDocument/11/项目文件夹/1//'.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'saveDocument/11/项目文件夹/1//'.
+2022-08-08 21:52:08,361 ERROR    Exception inside application: No route found for path 'saveDocument/11/12/'.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'saveDocument/11/12/'.
+2022-08-08 21:56:17,561 ERROR    Exception inside application: No route found for path 'saveDocument/11/12/'.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'saveDocument/11/12/'.
+2022-08-08 22:00:03,801 INFO     Killed 0 pending application instances
+171.92.19.238:39527 - - [08/Aug/2022:21:14:44] "WSCONNECTING /saveDocument/11_45/" - -
+171.92.19.238:39527 - - [08/Aug/2022:21:14:44] "WSDISCONNECT /saveDocument/11_45/" - -
+171.92.19.238:39543 - - [08/Aug/2022:21:14:57] "WSCONNECTING /saveDocument/11_45/" - -
+171.92.19.238:39543 - - [08/Aug/2022:21:14:58] "WSDISCONNECT /saveDocument/11_45/" - -
+171.92.19.238:39826 - - [08/Aug/2022:21:17:09] "WSCONNECTING /saveDocument/11_45/" - -
+171.92.19.238:39826 - - [08/Aug/2022:21:17:09] "WSDISCONNECT /saveDocument/11_45/" - -
+171.92.19.238:39946 - - [08/Aug/2022:21:18:20] "WSCONNECTING /saveDocument/11_45/" - -
+171.92.19.238:39946 - - [08/Aug/2022:21:18:20] "WSDISCONNECT /saveDocument/11_45/" - -
+171.92.19.238:40113 - - [08/Aug/2022:21:20:08] "WSCONNECTING /saveDocument/11_12/" - -
+171.92.19.238:40113 - - [08/Aug/2022:21:20:08] "WSDISCONNECT /saveDocument/11_12/" - -
+81.70.16.241:0 - - [08/Aug/2022:21:26:17] "GET /saveDocument/11_45/" 404 9886
+171.92.19.238:41840 - - [08/Aug/2022:21:36:40] "WSCONNECTING /saveDocument/11_12/" - -
+171.92.19.238:41840 - - [08/Aug/2022:21:36:41] "WSDISCONNECT /saveDocument/11_12/" - -
+171.92.19.238:41861 - - [08/Aug/2022:21:36:49] "WSCONNECTING /saveDocument/11_12/" - -
+171.92.19.238:41861 - - [08/Aug/2022:21:36:49] "WSDISCONNECT /saveDocument/11_12/" - -
+171.92.19.238:41954 - - [08/Aug/2022:21:37:43] "WSCONNECTING /saveDocument/11_45/" - -
+171.92.19.238:41954 - - [08/Aug/2022:21:37:43] "WSDISCONNECT /saveDocument/11_45/" - -
+171.92.19.238:37922 - - [08/Aug/2022:21:38:13] "WSCONNECTING /saveDocument/11_45/" - -
+171.92.19.238:37922 - - [08/Aug/2022:21:38:13] "WSDISCONNECT /saveDocument/11_45/" - -
+171.92.19.238:38515 - - [08/Aug/2022:21:42:35] "WSCONNECTING /saveDocument/11_45/" - -
+171.92.19.238:38515 - - [08/Aug/2022:21:42:35] "WSDISCONNECT /saveDocument/11_45/" - -
+171.92.19.238:38526 - - [08/Aug/2022:21:42:47] "WSCONNECTING /saveDocument/11_45/" - -
+171.92.19.238:38526 - - [08/Aug/2022:21:42:47] "WSDISCONNECT /saveDocument/11_45/" - -
+171.92.19.238:38541 - - [08/Aug/2022:21:43:02] "WSCONNECTING /saveDocument/11_12/" - -
+171.92.19.238:38541 - - [08/Aug/2022:21:43:02] "WSDISCONNECT /saveDocument/11_12/" - -
+81.70.16.241:0 - - [08/Aug/2022:21:45:22] "GET /saveDocument/11_12/" 404 9886
+171.92.19.238:38991 - - [08/Aug/2022:21:47:40] "WSCONNECTING /saveDocument/11/12" - -
+171.92.19.238:38991 - - [08/Aug/2022:21:47:41] "WSDISCONNECT /saveDocument/11/12" - -
+171.92.19.238:39797 - - [08/Aug/2022:21:51:29] "WSCONNECTING /saveDocument/11/%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9/1//" - -
+171.92.19.238:39797 - - [08/Aug/2022:21:51:30] "WSDISCONNECT /saveDocument/11/%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9/1//" - -
+171.92.19.238:39912 - - [08/Aug/2022:21:52:08] "WSCONNECTING /saveDocument/11/12/" - -
+171.92.19.238:39912 - - [08/Aug/2022:21:52:08] "WSDISCONNECT /saveDocument/11/12/" - -
+171.92.19.238:40490 - - [08/Aug/2022:21:56:17] "WSCONNECTING /saveDocument/11/12/" - -
+171.92.19.238:40490 - - [08/Aug/2022:21:56:17] "WSDISCONNECT /saveDocument/11/12/" - -
+2022-08-08 22:00:04,435 INFO     Starting server at tcp:port=8001:interface=0.0.0.0
+2022-08-08 22:00:04,435 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-08-08 22:00:04,436 INFO     Configuring endpoint tcp:port=8001:interface=0.0.0.0
+2022-08-08 22:00:04,436 INFO     Listening on TCP address 0.0.0.0:8001
+2022-08-08 22:00:17,445 ERROR    Exception inside application: No route found for path 'saveDocument/11+12/'.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'saveDocument/11+12/'.
+2022-08-08 22:02:43,928 INFO     Killed 0 pending application instances
+171.92.19.238:40913 - - [08/Aug/2022:22:00:16] "WSCONNECTING /saveDocument/11+12/" - -
+171.92.19.238:40913 - - [08/Aug/2022:22:00:17] "WSDISCONNECT /saveDocument/11+12/" - -
+2022-08-08 22:02:44,534 INFO     Starting server at tcp:port=8001:interface=0.0.0.0
+2022-08-08 22:02:44,535 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-08-08 22:02:44,535 INFO     Configuring endpoint tcp:port=8001:interface=0.0.0.0
+2022-08-08 22:02:44,536 INFO     Listening on TCP address 0.0.0.0:8001
+2022-08-08 22:03:02,548 ERROR    Exception inside application: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 16, in connect
+    self.room_name = 'doc_' + document.ID
+TypeError: can only concatenate str (not "int") to str
+Not Found: /saveDocument/11/12/
+2022-08-08 22:10:27,681 WARNING  Not Found: /saveDocument/11/12/
+Not Found: /saveDocument/11/项目文件夹/1//
+2022-08-08 22:10:33,196 WARNING  Not Found: /saveDocument/11/项目文件夹/1//
+2022-08-08 22:29:32,726 INFO     Killed 0 pending application instances
+171.92.19.238:41236 - - [08/Aug/2022:22:03:02] "WSCONNECTING /saveDocument/11_12/" - -
+171.92.19.238:41236 - - [08/Aug/2022:22:03:02] "WSDISCONNECT /saveDocument/11_12/" - -
+81.70.16.241:0 - - [08/Aug/2022:22:10:27] "GET /saveDocument/11/12/" 404 9886
+81.70.16.241:0 - - [08/Aug/2022:22:10:33] "GET /saveDocument/11/%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9/1//" 404 9964
+2022-08-08 22:29:33,345 INFO     Starting server at tcp:port=8001:interface=0.0.0.0
+2022-08-08 22:29:33,345 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-08-08 22:29:33,346 INFO     Configuring endpoint tcp:port=8001:interface=0.0.0.0
+2022-08-08 22:29:33,346 INFO     Listening on TCP address 0.0.0.0:8001
+2022-08-08 22:30:18,378 ERROR    Exception inside application: Document matching query does not exist.
+Traceback (most recent call last):
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/channels/generic/websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "/home/danny/SummerTermBack/./project/consumers.py", line 15, in connect
+    document = Document.objects.get(URL=docURL)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/danny/miniconda3/envs/django/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+project.models.Document.DoesNotExist: Document matching query does not exist.

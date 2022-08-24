@@ -1,0 +1,36 @@
+邮箱验证码不点击发送，乱输入
+邮箱：luuulen2021@163.com
+授权码：VEHDZZCNWOOENFQK
+
+存文件
+file = models.FileField(upload_to='fileUrl/')
+def TTT(request):
+    name = request.POST.get('name')
+    file = request.FILES.get('file')
+    if TestFile.objects.filter(name=name).exists():
+        testFile = TestFile.objects.get(name=name)
+        testFile.file.delete()
+        testFile.file = file
+        testFile.save()
+    else:
+        testFile = TestFile(name=name, file=file)
+        testFile.save()
+    result = {'result': 0, 'testfileurl': testFile.file.url}
+    return HttpResponse(json.dumps(result), content_type="application/json")
+
+conda activate django && cd SummerTermBack
+killall -9 uwsgi
+uwsgi --ini uwsgi.ini
+supervisorctl restart STB
+sudo nginx -s reload
+
+python manage.py makemigrations
+python manage.py migrate
+
+CREATE DATABASE `mydb` CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+~~~~
+description长度100
+关联性问题
+如果数据库对应列表项没有初始化，返回值是什么
+url的name写法

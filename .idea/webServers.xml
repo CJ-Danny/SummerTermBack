@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3fe69f10-9b8f-4ba7-b7ec-59488d650167" name="SummerTerm">
+        <fileTransfer rootFolder="/home/danny" accessType="SFTP" host="81.70.16.241" port="22" sshConfigId="e60b6671-30af-410d-85b4-4dca9650bbd4" sshConfig="danny@81.70.16.241:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
